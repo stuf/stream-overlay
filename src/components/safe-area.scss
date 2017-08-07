@@ -1,0 +1,50 @@
+.safe-area__component {
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  position: absolute;
+}
+
+.safe-area__component rect,
+.safe-area__component line {
+  stroke-width: 0.1rem;
+}
+
+.safe-area__component rect {
+  fill: transparent;
+  stroke: red;
+}
+
+.area__action-safe {
+  x: 5%;
+  y: 5%;
+  width: 90%;
+  height: 90%;
+}
+
+.area__title-safe {
+  x: 10%;
+  y: 10%;
+  width: 80%;
+  height: 80%;
+  fill: transparent;
+}
+
+.safe-area__component line {
+  stroke: red;
+}
+
+line.cross__line1 {
+  x1: 45%;
+  y1: 50%;
+  x2: 55%;
+}
+
+line.cross__line2 {}
+
+.safe-area__frame {
+  width: 80%;
+  height: 80%;
+  stroke: red;
+  fill: transparent;
+}
