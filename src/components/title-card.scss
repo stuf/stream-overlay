@@ -1,6 +1,28 @@
+$title-card-title-font-size: 2.5rem;
+$title-card-subtitle-font-size: 3rem;
+
 .title-card__component {
-  border: solid 1px #f00;
+  // border: solid 1px #f00;
   position: absolute;
   left: 7.5%;
   bottom: 7.5%;
+  line-height: 1.1;
+
+  h3,
+  p {
+    display: inline-block;
+    background: rgba(255, 255, 255, 1);
+    margin: 0;
+    padding: 0.2rem 0.5rem;
+  }
+
+  h3 {
+    font-size: $title-card-title-font-size;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: $title-card-subtitle-font-size;
+    border-bottom: solid 0.4rem rgba(0, 0, 0, 0.87);
+  }
 }
