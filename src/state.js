@@ -1,3 +1,4 @@
+/* eslint-disable import/prefer-default-export */
 import * as U from 'karet.util';
 import Stored from 'atom.storage';
 

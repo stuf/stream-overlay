@@ -1,7 +1,7 @@
 import * as React from 'karet';
 import * as U from 'karet.util';
 import * as R from 'ramda';
-import { format,  } from 'date-fns';
+import { format } from 'date-fns';
 import './clock.css';
 
 const timeFormat = 'HH:mm:ss';

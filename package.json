@@ -32,6 +32,8 @@
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
     "build": "npm run build-css && react-scripts build",
+    "lint": "eslint src/",
+    "lint-fix": "npm run lint -- --fix",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
