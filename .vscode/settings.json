@@ -1,4 +1,8 @@
 {
   "mocha.enabled": true,
-  "eslint.enable": true
+  "eslint.enable": true,
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true
+  }
 }
