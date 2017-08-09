@@ -1,6 +1,15 @@
 $action-safe: 3.5%;
 $title-safe: 5%;
-$frame-stroke-width: 0.1rem;
+
+$stroke-color: #f00;
+$stroke-width: 0.1rem;
+$stroke-dasharray: 5, 10, 5;
+$stroke-dotted: 3, 3;
+
+$frame-stroke-width: $stroke-width;
+$cross-stroke-width: $stroke-width;
+
+$cross-stroke-color: $stroke-color;
 
 .safe-area__component {
   width: 100vw;
@@ -11,14 +20,20 @@ $frame-stroke-width: 0.1rem;
 
 .safe-area__component {
   rect, line {
-    stroke-width: $frame-stroke-width;
+    stroke-width: $stroke-width;
   }
+}
 
-  rect {
-    fill: transparent;
-    stroke: red;
-    stroke-dasharray: 5, 10, 5;
-  }
+.area {
+  fill: transparent;
+  stroke: $stroke-color;
+  stroke-dasharray: $stroke-dasharray;
+}
+
+.cross {
+  stroke: $cross-stroke-color;
+  stroke-width: $cross-stroke-width;
+  stroke-dasharray: $stroke-dotted;
 }
 
 .area {
@@ -49,9 +64,3 @@ line.cross__line1 {
 
 line.cross__line2 {}
 
-.safe-area__frame {
-  width: 80%;
-  height: 80%;
-  stroke: red;
-  fill: transparent;
-}

@@ -4,7 +4,7 @@ import * as R from 'ramda';
 import { format } from 'date-fns';
 import './clock.css';
 
-const timeFormat = 'HH:mm:ss';
+const timeFormat = 'HH:mm';
 
 const getNow = R.constructN(0, Date);
 const getFormatted = () => format(getNow(), timeFormat);

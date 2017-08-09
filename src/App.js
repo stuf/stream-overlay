@@ -3,6 +3,7 @@ import * as React from 'karet';
 import K, * as U from 'karet.util';
 import * as R from 'ramda';
 import * as L from 'partial.lenses';
+import * as Kefir from 'kefir';
 
 import * as M from './meta';
 import { SafeArea, Clock, TitleCard } from './components';
@@ -24,6 +25,7 @@ Object.assign(window, {
   items,
   itemsProp,
   itemsIn,
+  Kefir,
   K,
   U,
   R,
@@ -35,7 +37,7 @@ Object.assign(window, {
 
 const App = () =>
   <div>
-    <TitleCard title="Profunctor optics"
+    <TitleCard title="Salt Boxes"
                subtitle="You are like a little baby" />
     <SafeArea />
     <Clock />
